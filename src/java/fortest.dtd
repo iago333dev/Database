@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/fortest.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE sbml SYSTEM "fortest.dtd">
+
+    <sbml>
+    ...
+    </sbml>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT sbml (model)*>
+<!ATTLIST sbml
+    level CDATA #IMPLIED
+    metaid CDATA #IMPLIED
+    version CDATA #IMPLIED
+    xmlns CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT model (notes|annotation|listOfUnitDefinitions|listOfCompartments|listOfSpecies|listOfReactions)*>
+<!ATTLIST model
+    id CDATA #IMPLIED
+    name CDATA #IMPLIED
+    metaid CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT notes (body)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT body (h1|table|p)*>
+<!ATTLIST body
+    xmlns CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT h1 (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT table (thead|tbody)*>
+<!ATTLIST table
+    border CDATA #IMPLIED
+    cellpadding CDATA #IMPLIED
+    cellspacing CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT thead (tr)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT tr (th|td)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT th (#PCDATA)>
+<!ATTLIST th
+    align CDATA #IMPLIED
+    bgcolor CDATA #IMPLIED
+    valign CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT tbody (tr)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT td (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT p (#PCDATA|br|a)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT br EMPTY>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT a (#PCDATA)>
+<!ATTLIST a
+    href CDATA #IMPLIED
+    target CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT annotation (rdf:RDF)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT rdf:RDF (rdf:Description)*>
+<!ATTLIST rdf:RDF
+    xmlns:dcterms CDATA #IMPLIED
+    xmlns:vCard CDATA #IMPLIED
+    xmlns:bqmodel CDATA #IMPLIED
+    xmlns:bqbiol CDATA #IMPLIED
+    xmlns:rdf CDATA #IMPLIED
+    xmlns:dc CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT rdf:Description (bqmodel:isDescribedBy|bqmodel:isDerivedFrom|bqbiol:isHomologTo|dcterms:modified|bqbiol:is|bqmodel:is|bqbiol:occursIn|dc:creator|bqbiol:hasPart|bqbiol:isVersionOf|dcterms:created)*>
+<!ATTLIST rdf:Description
+    rdf:about CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT dc:creator (rdf:Bag)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT rdf:Bag (rdf:li)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT rdf:li (vCard:N|vCard:EMAIL|vCard:ORG)*>
+<!ATTLIST rdf:li
+    rdf:resource CDATA #IMPLIED
+    rdf:parseType CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT vCard:N (vCard:Family|vCard:Given)*>
+<!ATTLIST vCard:N
+    rdf:parseType CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT vCard:Family (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT vCard:Given (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT vCard:EMAIL (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT vCard:ORG (vCard:Orgname)*>
+<!ATTLIST vCard:ORG
+    rdf:parseType CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT vCard:Orgname (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT dcterms:created (dcterms:W3CDTF)*>
+<!ATTLIST dcterms:created
+    rdf:parseType CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT dcterms:W3CDTF (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT dcterms:modified (dcterms:W3CDTF)*>
+<!ATTLIST dcterms:modified
+    rdf:parseType CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT bqmodel:is (rdf:Bag)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT bqmodel:isDescribedBy (rdf:Bag)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT bqbiol:isHomologTo (rdf:Bag)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT bqbiol:isVersionOf (rdf:Bag)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT bqbiol:occursIn (rdf:Bag)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT bqmodel:isDerivedFrom (rdf:Bag)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT listOfUnitDefinitions (unitDefinition)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT unitDefinition (listOfUnits)*>
+<!ATTLIST unitDefinition
+    id CDATA #IMPLIED
+    name CDATA #IMPLIED
+    metaid CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT listOfUnits (unit)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT unit EMPTY>
+<!ATTLIST unit
+    scale CDATA #IMPLIED
+    metaid CDATA #IMPLIED
+    kind CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT listOfCompartments (compartment)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT compartment (annotation)*>
+<!ATTLIST compartment
+    id CDATA #IMPLIED
+    metaid CDATA #IMPLIED
+    size CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT bqbiol:is (rdf:Bag)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT listOfSpecies (species)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT species (annotation)*>
+<!ATTLIST species
+    id CDATA #IMPLIED
+    initialAmount CDATA #IMPLIED
+    hasOnlySubstanceUnits CDATA #IMPLIED
+    name CDATA #IMPLIED
+    metaid CDATA #IMPLIED
+    compartment CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT bqbiol:hasPart (rdf:Bag)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT listOfReactions (reaction)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT reaction (annotation|listOfReactants|listOfProducts|kineticLaw)*>
+<!ATTLIST reaction
+    id CDATA #IMPLIED
+    name CDATA #IMPLIED
+    metaid CDATA #IMPLIED
+    reversible CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT listOfReactants (speciesReference)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT speciesReference EMPTY>
+<!ATTLIST speciesReference
+    species CDATA #IMPLIED
+    metaid CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT listOfProducts (speciesReference)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT kineticLaw (math|listOfParameters)*>
+<!ATTLIST kineticLaw
+    metaid CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT math (apply)*>
+<!ATTLIST math
+    xmlns CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT apply (times|ci)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT times EMPTY>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT ci (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT listOfParameters (parameter)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT parameter EMPTY>
+<!ATTLIST parameter
+    id CDATA #IMPLIED
+    metaid CDATA #IMPLIED
+    value CDATA #IMPLIED
+  >

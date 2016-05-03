@@ -1,0 +1,686 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>DTD 语法文档</title>
+<meta http-equiv="Content-Type" content="text/xhtml; charset=UTF-8" />
+</head>
+
+<!-- Generated on 2016-5-3 by NetBeans XML module. -->
+<body>
+
+<hr />
+<h2>元素索引</h2>
+<ul><li><tt><a href="#a">a</a></tt></li>
+<li><tt><a href="#annotation">annotation</a></tt></li>
+<li><tt><a href="#apply">apply</a></tt></li>
+<li><tt><a href="#body">body</a></tt></li>
+<li><tt><a href="#bqbiol:hasPart">bqbiol:hasPart</a></tt></li>
+<li><tt><a href="#bqbiol:is">bqbiol:is</a></tt></li>
+<li><tt><a href="#bqbiol:isHomologTo">bqbiol:isHomologTo</a></tt></li>
+<li><tt><a href="#bqbiol:isVersionOf">bqbiol:isVersionOf</a></tt></li>
+<li><tt><a href="#bqbiol:occursIn">bqbiol:occursIn</a></tt></li>
+<li><tt><a href="#bqmodel:is">bqmodel:is</a></tt></li>
+<li><tt><a href="#bqmodel:isDerivedFrom">bqmodel:isDerivedFrom</a></tt></li>
+<li><tt><a href="#bqmodel:isDescribedBy">bqmodel:isDescribedBy</a></tt></li>
+<li><tt><a href="#br">br</a></tt></li>
+<li><tt><a href="#ci">ci</a></tt></li>
+<li><tt><a href="#compartment">compartment</a></tt></li>
+<li><tt><a href="#dc:creator">dc:creator</a></tt></li>
+<li><tt><a href="#dcterms:W3CDTF">dcterms:W3CDTF</a></tt></li>
+<li><tt><a href="#dcterms:created">dcterms:created</a></tt></li>
+<li><tt><a href="#dcterms:modified">dcterms:modified</a></tt></li>
+<li><tt><a href="#h1">h1</a></tt></li>
+<li><tt><a href="#kineticLaw">kineticLaw</a></tt></li>
+<li><tt><a href="#listOfCompartments">listOfCompartments</a></tt></li>
+<li><tt><a href="#listOfParameters">listOfParameters</a></tt></li>
+<li><tt><a href="#listOfProducts">listOfProducts</a></tt></li>
+<li><tt><a href="#listOfReactants">listOfReactants</a></tt></li>
+<li><tt><a href="#listOfReactions">listOfReactions</a></tt></li>
+<li><tt><a href="#listOfSpecies">listOfSpecies</a></tt></li>
+<li><tt><a href="#listOfUnitDefinitions">listOfUnitDefinitions</a></tt></li>
+<li><tt><a href="#listOfUnits">listOfUnits</a></tt></li>
+<li><tt><a href="#math">math</a></tt></li>
+<li><tt><a href="#model">model</a></tt></li>
+<li><tt><a href="#notes">notes</a></tt></li>
+<li><tt><a href="#p">p</a></tt></li>
+<li><tt><a href="#parameter">parameter</a></tt></li>
+<li><tt><a href="#rdf:Bag">rdf:Bag</a></tt></li>
+<li><tt><a href="#rdf:Description">rdf:Description</a></tt></li>
+<li><tt><a href="#rdf:RDF">rdf:RDF</a></tt></li>
+<li><tt><a href="#rdf:li">rdf:li</a></tt></li>
+<li><tt><a href="#reaction">reaction</a></tt></li>
+<li><tt><a href="#sbml">sbml</a></tt></li>
+<li><tt><a href="#species">species</a></tt></li>
+<li><tt><a href="#speciesReference">speciesReference</a></tt></li>
+<li><tt><a href="#table">table</a></tt></li>
+<li><tt><a href="#tbody">tbody</a></tt></li>
+<li><tt><a href="#td">td</a></tt></li>
+<li><tt><a href="#th">th</a></tt></li>
+<li><tt><a href="#thead">thead</a></tt></li>
+<li><tt><a href="#times">times</a></tt></li>
+<li><tt><a href="#tr">tr</a></tt></li>
+<li><tt><a href="#unit">unit</a></tt></li>
+<li><tt><a href="#unitDefinition">unitDefinition</a></tt></li>
+<li><tt><a href="#vCard:EMAIL">vCard:EMAIL</a></tt></li>
+<li><tt><a href="#vCard:Family">vCard:Family</a></tt></li>
+<li><tt><a href="#vCard:Given">vCard:Given</a></tt></li>
+<li><tt><a href="#vCard:N">vCard:N</a></tt></li>
+<li><tt><a href="#vCard:ORG">vCard:ORG</a></tt></li>
+<li><tt><a href="#vCard:Orgname">vCard:Orgname</a></tt></li>
+</ul>
+
+<hr />
+<h2>元素详细信息</h2>
+
+
+<hr />
+<h2><a name="sbml"></a>sbml</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>声明的属性</b></p>
+<ul><li><tt>#IMPLIED CDATA level</tt></li>
+<li><tt>#IMPLIED CDATA metaid</tt></li>
+<li><tt>#IMPLIED CDATA version</tt></li>
+<li><tt>#IMPLIED CDATA xmlns</tt></li>
+</ul>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#model">model</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt></tt></p>
+
+
+<hr />
+<h2><a name="model"></a>model</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>声明的属性</b></p>
+<ul><li><tt>#IMPLIED CDATA id</tt></li>
+<li><tt>#IMPLIED CDATA name</tt></li>
+<li><tt>#IMPLIED CDATA metaid</tt></li>
+</ul>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#notes">notes</a>&nbsp;| <a href="#annotation">annotation</a>&nbsp;| <a href="#listOfUnitDefinitions">listOfUnitDefinitions</a>&nbsp;| <a href="#listOfCompartments">listOfCompartments</a>&nbsp;| <a href="#listOfSpecies">listOfSpecies</a>&nbsp;| <a href="#listOfReactions">listOfReactions</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#sbml">sbml</a></tt></p>
+
+
+<hr />
+<h2><a name="notes"></a>notes</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#body">body</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#model">model</a></tt></p>
+
+
+<hr />
+<h2><a name="body"></a>body</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>声明的属性</b></p>
+<ul><li><tt>#IMPLIED CDATA xmlns</tt></li>
+</ul>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#h1">h1</a>&nbsp;| <a href="#table">table</a>&nbsp;| <a href="#p">p</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#notes">notes</a></tt></p>
+
+
+<hr />
+<h2><a name="h1"></a>h1</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(#PCDATA)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#body">body</a></tt></p>
+
+
+<hr />
+<h2><a name="table"></a>table</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>声明的属性</b></p>
+<ul><li><tt>#IMPLIED CDATA border</tt></li>
+<li><tt>#IMPLIED CDATA cellpadding</tt></li>
+<li><tt>#IMPLIED CDATA cellspacing</tt></li>
+</ul>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#thead">thead</a>&nbsp;| <a href="#tbody">tbody</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#body">body</a></tt></p>
+
+
+<hr />
+<h2><a name="thead"></a>thead</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#tr">tr</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#table">table</a></tt></p>
+
+
+<hr />
+<h2><a name="tr"></a>tr</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#th">th</a>&nbsp;| <a href="#td">td</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#thead">thead</a>, <a href="#tbody">tbody</a></tt></p>
+
+
+<hr />
+<h2><a name="th"></a>th</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>声明的属性</b></p>
+<ul><li><tt>#IMPLIED CDATA align</tt></li>
+<li><tt>#IMPLIED CDATA bgcolor</tt></li>
+<li><tt>#IMPLIED CDATA valign</tt></li>
+</ul>
+<p><b>元素内容模型</b></p>
+<p><tt>(#PCDATA)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#tr">tr</a></tt></p>
+
+
+<hr />
+<h2><a name="tbody"></a>tbody</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#tr">tr</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#table">table</a></tt></p>
+
+
+<hr />
+<h2><a name="td"></a>td</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(#PCDATA)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#tr">tr</a></tt></p>
+
+
+<hr />
+<h2><a name="p"></a>p</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(#PCDATA&nbsp;| <a href="#br">br</a>&nbsp;| <a href="#a">a</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#body">body</a></tt></p>
+
+
+<hr />
+<h2><a name="br"></a>br</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>EMPTY</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#p">p</a></tt></p>
+
+
+<hr />
+<h2><a name="a"></a>a</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>声明的属性</b></p>
+<ul><li><tt>#IMPLIED CDATA href</tt></li>
+<li><tt>#IMPLIED CDATA target</tt></li>
+</ul>
+<p><b>元素内容模型</b></p>
+<p><tt>(#PCDATA)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#p">p</a></tt></p>
+
+
+<hr />
+<h2><a name="annotation"></a>annotation</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#rdf:RDF">rdf:RDF</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#model">model</a>, <a href="#compartment">compartment</a>, <a href="#species">species</a>, <a href="#reaction">reaction</a></tt></p>
+
+
+<hr />
+<h2><a name="rdf:RDF"></a>rdf:RDF</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>声明的属性</b></p>
+<ul><li><tt>#IMPLIED CDATA xmlns:dcterms</tt></li>
+<li><tt>#IMPLIED CDATA xmlns:vCard</tt></li>
+<li><tt>#IMPLIED CDATA xmlns:bqmodel</tt></li>
+<li><tt>#IMPLIED CDATA xmlns:bqbiol</tt></li>
+<li><tt>#IMPLIED CDATA xmlns:rdf</tt></li>
+<li><tt>#IMPLIED CDATA xmlns:dc</tt></li>
+</ul>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#rdf:Description">rdf:Description</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#annotation">annotation</a></tt></p>
+
+
+<hr />
+<h2><a name="rdf:Description"></a>rdf:Description</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>声明的属性</b></p>
+<ul><li><tt>#IMPLIED CDATA rdf:about</tt></li>
+</ul>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#bqmodel:isDescribedBy">bqmodel:isDescribedBy</a>&nbsp;| <a href="#bqmodel:isDerivedFrom">bqmodel:isDerivedFrom</a>&nbsp;| <a href="#bqbiol:isHomologTo">bqbiol:isHomologTo</a>&nbsp;| <a href="#dcterms:modified">dcterms:modified</a>&nbsp;| <a href="#bqbiol:is">bqbiol:is</a>&nbsp;| <a href="#bqmodel:is">bqmodel:is</a>&nbsp;| <a href="#bqbiol:occursIn">bqbiol:occursIn</a>&nbsp;| <a href="#dc:creator">dc:creator</a>&nbsp;| <a href="#bqbiol:hasPart">bqbiol:hasPart</a>&nbsp;| <a href="#bqbiol:isVersionOf">bqbiol:isVersionOf</a>&nbsp;| <a href="#dcterms:created">dcterms:created</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#rdf:RDF">rdf:RDF</a></tt></p>
+
+
+<hr />
+<h2><a name="dc:creator"></a>dc:creator</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#rdf:Bag">rdf:Bag</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#rdf:Description">rdf:Description</a></tt></p>
+
+
+<hr />
+<h2><a name="rdf:Bag"></a>rdf:Bag</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#rdf:li">rdf:li</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#dc:creator">dc:creator</a>, <a href="#bqmodel:is">bqmodel:is</a>, <a href="#bqmodel:isDescribedBy">bqmodel:isDescribedBy</a>, <a href="#bqbiol:isHomologTo">bqbiol:isHomologTo</a>, <a href="#bqbiol:isVersionOf">bqbiol:isVersionOf</a>, <a href="#bqbiol:occursIn">bqbiol:occursIn</a>, <a href="#bqmodel:isDerivedFrom">bqmodel:isDerivedFrom</a>, <a href="#bqbiol:is">bqbiol:is</a>, <a href="#bqbiol:hasPart">bqbiol:hasPart</a></tt></p>
+
+
+<hr />
+<h2><a name="rdf:li"></a>rdf:li</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>声明的属性</b></p>
+<ul><li><tt>#IMPLIED CDATA rdf:resource</tt></li>
+<li><tt>#IMPLIED CDATA rdf:parseType</tt></li>
+</ul>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#vCard:N">vCard:N</a>&nbsp;| <a href="#vCard:EMAIL">vCard:EMAIL</a>&nbsp;| <a href="#vCard:ORG">vCard:ORG</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#rdf:Bag">rdf:Bag</a></tt></p>
+
+
+<hr />
+<h2><a name="vCard:N"></a>vCard:N</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>声明的属性</b></p>
+<ul><li><tt>#IMPLIED CDATA rdf:parseType</tt></li>
+</ul>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#vCard:Family">vCard:Family</a>&nbsp;| <a href="#vCard:Given">vCard:Given</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#rdf:li">rdf:li</a></tt></p>
+
+
+<hr />
+<h2><a name="vCard:Family"></a>vCard:Family</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(#PCDATA)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#vCard:N">vCard:N</a></tt></p>
+
+
+<hr />
+<h2><a name="vCard:Given"></a>vCard:Given</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(#PCDATA)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#vCard:N">vCard:N</a></tt></p>
+
+
+<hr />
+<h2><a name="vCard:EMAIL"></a>vCard:EMAIL</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(#PCDATA)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#rdf:li">rdf:li</a></tt></p>
+
+
+<hr />
+<h2><a name="vCard:ORG"></a>vCard:ORG</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>声明的属性</b></p>
+<ul><li><tt>#IMPLIED CDATA rdf:parseType</tt></li>
+</ul>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#vCard:Orgname">vCard:Orgname</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#rdf:li">rdf:li</a></tt></p>
+
+
+<hr />
+<h2><a name="vCard:Orgname"></a>vCard:Orgname</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(#PCDATA)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#vCard:ORG">vCard:ORG</a></tt></p>
+
+
+<hr />
+<h2><a name="dcterms:created"></a>dcterms:created</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>声明的属性</b></p>
+<ul><li><tt>#IMPLIED CDATA rdf:parseType</tt></li>
+</ul>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#dcterms:W3CDTF">dcterms:W3CDTF</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#rdf:Description">rdf:Description</a></tt></p>
+
+
+<hr />
+<h2><a name="dcterms:W3CDTF"></a>dcterms:W3CDTF</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(#PCDATA)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#dcterms:created">dcterms:created</a>, <a href="#dcterms:modified">dcterms:modified</a></tt></p>
+
+
+<hr />
+<h2><a name="dcterms:modified"></a>dcterms:modified</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>声明的属性</b></p>
+<ul><li><tt>#IMPLIED CDATA rdf:parseType</tt></li>
+</ul>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#dcterms:W3CDTF">dcterms:W3CDTF</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#rdf:Description">rdf:Description</a></tt></p>
+
+
+<hr />
+<h2><a name="bqmodel:is"></a>bqmodel:is</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#rdf:Bag">rdf:Bag</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#rdf:Description">rdf:Description</a></tt></p>
+
+
+<hr />
+<h2><a name="bqmodel:isDescribedBy"></a>bqmodel:isDescribedBy</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#rdf:Bag">rdf:Bag</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#rdf:Description">rdf:Description</a></tt></p>
+
+
+<hr />
+<h2><a name="bqbiol:isHomologTo"></a>bqbiol:isHomologTo</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#rdf:Bag">rdf:Bag</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#rdf:Description">rdf:Description</a></tt></p>
+
+
+<hr />
+<h2><a name="bqbiol:isVersionOf"></a>bqbiol:isVersionOf</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#rdf:Bag">rdf:Bag</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#rdf:Description">rdf:Description</a></tt></p>
+
+
+<hr />
+<h2><a name="bqbiol:occursIn"></a>bqbiol:occursIn</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#rdf:Bag">rdf:Bag</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#rdf:Description">rdf:Description</a></tt></p>
+
+
+<hr />
+<h2><a name="bqmodel:isDerivedFrom"></a>bqmodel:isDerivedFrom</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#rdf:Bag">rdf:Bag</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#rdf:Description">rdf:Description</a></tt></p>
+
+
+<hr />
+<h2><a name="listOfUnitDefinitions"></a>listOfUnitDefinitions</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#unitDefinition">unitDefinition</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#model">model</a></tt></p>
+
+
+<hr />
+<h2><a name="unitDefinition"></a>unitDefinition</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>声明的属性</b></p>
+<ul><li><tt>#IMPLIED CDATA id</tt></li>
+<li><tt>#IMPLIED CDATA name</tt></li>
+<li><tt>#IMPLIED CDATA metaid</tt></li>
+</ul>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#listOfUnits">listOfUnits</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#listOfUnitDefinitions">listOfUnitDefinitions</a></tt></p>
+
+
+<hr />
+<h2><a name="listOfUnits"></a>listOfUnits</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#unit">unit</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#unitDefinition">unitDefinition</a></tt></p>
+
+
+<hr />
+<h2><a name="unit"></a>unit</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>声明的属性</b></p>
+<ul><li><tt>#IMPLIED CDATA scale</tt></li>
+<li><tt>#IMPLIED CDATA metaid</tt></li>
+<li><tt>#IMPLIED CDATA kind</tt></li>
+</ul>
+<p><b>元素内容模型</b></p>
+<p><tt>EMPTY</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#listOfUnits">listOfUnits</a></tt></p>
+
+
+<hr />
+<h2><a name="listOfCompartments"></a>listOfCompartments</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#compartment">compartment</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#model">model</a></tt></p>
+
+
+<hr />
+<h2><a name="compartment"></a>compartment</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>声明的属性</b></p>
+<ul><li><tt>#IMPLIED CDATA id</tt></li>
+<li><tt>#IMPLIED CDATA metaid</tt></li>
+<li><tt>#IMPLIED CDATA size</tt></li>
+</ul>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#annotation">annotation</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#listOfCompartments">listOfCompartments</a></tt></p>
+
+
+<hr />
+<h2><a name="bqbiol:is"></a>bqbiol:is</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#rdf:Bag">rdf:Bag</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#rdf:Description">rdf:Description</a></tt></p>
+
+
+<hr />
+<h2><a name="listOfSpecies"></a>listOfSpecies</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#species">species</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#model">model</a></tt></p>
+
+
+<hr />
+<h2><a name="species"></a>species</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>声明的属性</b></p>
+<ul><li><tt>#IMPLIED CDATA id</tt></li>
+<li><tt>#IMPLIED CDATA initialAmount</tt></li>
+<li><tt>#IMPLIED CDATA hasOnlySubstanceUnits</tt></li>
+<li><tt>#IMPLIED CDATA name</tt></li>
+<li><tt>#IMPLIED CDATA metaid</tt></li>
+<li><tt>#IMPLIED CDATA compartment</tt></li>
+</ul>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#annotation">annotation</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#listOfSpecies">listOfSpecies</a></tt></p>
+
+
+<hr />
+<h2><a name="bqbiol:hasPart"></a>bqbiol:hasPart</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#rdf:Bag">rdf:Bag</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#rdf:Description">rdf:Description</a></tt></p>
+
+
+<hr />
+<h2><a name="listOfReactions"></a>listOfReactions</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#reaction">reaction</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#model">model</a></tt></p>
+
+
+<hr />
+<h2><a name="reaction"></a>reaction</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>声明的属性</b></p>
+<ul><li><tt>#IMPLIED CDATA id</tt></li>
+<li><tt>#IMPLIED CDATA name</tt></li>
+<li><tt>#IMPLIED CDATA metaid</tt></li>
+<li><tt>#IMPLIED CDATA reversible</tt></li>
+</ul>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#annotation">annotation</a>&nbsp;| <a href="#listOfReactants">listOfReactants</a>&nbsp;| <a href="#listOfProducts">listOfProducts</a>&nbsp;| <a href="#kineticLaw">kineticLaw</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#listOfReactions">listOfReactions</a></tt></p>
+
+
+<hr />
+<h2><a name="listOfReactants"></a>listOfReactants</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#speciesReference">speciesReference</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#reaction">reaction</a></tt></p>
+
+
+<hr />
+<h2><a name="speciesReference"></a>speciesReference</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>声明的属性</b></p>
+<ul><li><tt>#IMPLIED CDATA species</tt></li>
+<li><tt>#IMPLIED CDATA metaid</tt></li>
+</ul>
+<p><b>元素内容模型</b></p>
+<p><tt>EMPTY</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#listOfReactants">listOfReactants</a>, <a href="#listOfProducts">listOfProducts</a></tt></p>
+
+
+<hr />
+<h2><a name="listOfProducts"></a>listOfProducts</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#speciesReference">speciesReference</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#reaction">reaction</a></tt></p>
+
+
+<hr />
+<h2><a name="kineticLaw"></a>kineticLaw</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>声明的属性</b></p>
+<ul><li><tt>#IMPLIED CDATA metaid</tt></li>
+</ul>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#math">math</a>&nbsp;| <a href="#listOfParameters">listOfParameters</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#reaction">reaction</a></tt></p>
+
+
+<hr />
+<h2><a name="math"></a>math</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>声明的属性</b></p>
+<ul><li><tt>#IMPLIED CDATA xmlns</tt></li>
+</ul>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#apply">apply</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#kineticLaw">kineticLaw</a></tt></p>
+
+
+<hr />
+<h2><a name="apply"></a>apply</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#times">times</a>&nbsp;| <a href="#ci">ci</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#math">math</a></tt></p>
+
+
+<hr />
+<h2><a name="times"></a>times</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>EMPTY</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#apply">apply</a></tt></p>
+
+
+<hr />
+<h2><a name="ci"></a>ci</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(#PCDATA)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#apply">apply</a></tt></p>
+
+
+<hr />
+<h2><a name="listOfParameters"></a>listOfParameters</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>元素内容模型</b></p>
+<p><tt>(<a href="#parameter">parameter</a>)*</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#kineticLaw">kineticLaw</a></tt></p>
+
+
+<hr />
+<h2><a name="parameter"></a>parameter</h2>
+<div>Put your DTDDoc comment here.</div>
+<p><b>声明的属性</b></p>
+<ul><li><tt>#IMPLIED CDATA id</tt></li>
+<li><tt>#IMPLIED CDATA metaid</tt></li>
+<li><tt>#IMPLIED CDATA value</tt></li>
+</ul>
+<p><b>元素内容模型</b></p>
+<p><tt>EMPTY</tt></p>
+<p><b>引用者</b></p>
+<p><tt><a href="#listOfParameters">listOfParameters</a></tt></p>
+</body></html>
