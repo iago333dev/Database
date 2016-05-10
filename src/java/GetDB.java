@@ -54,9 +54,16 @@ public class GetDB {
                 List <Element> ListOfSpecies = ListOfSpeciesNode.elements("species");
                 for(Element specie : ListOfSpecies)
                 {
-                    System.out.println(specie.getText());
+                    //得到specie的属性
+                    System.out.println(specie.attribute("id"));
+                    System.out.println(specie.attribute("initialAmount"));
+                    System.out.println(specie.attribute("hasOnlySubstanceUnits"));
+                    System.out.println(specie.attribute("name"));
+                    
                     
                 }
+                
+                
                 
                 
                 
